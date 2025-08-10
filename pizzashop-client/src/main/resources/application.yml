@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/pizzashop_db
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+
+api:
+  catalog:
+    url: http://localhost:8081/api/
+  order:
+    url: http://localhost:8082/api/
